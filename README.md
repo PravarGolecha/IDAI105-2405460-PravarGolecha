@@ -37,6 +37,9 @@ Data-driven decisions for inventory management and sales optimization.
 Enhanced customer experience and satisfaction by aligning product recommendations with shopping behaviors.
 
 ###	Data Cleaning and Preprocessing
+- **Removed missing values** from key columns like `product_id`, `actual_price`, `discounted_price`, `rating`, etc.  
+- **Normalized numerical data** and **encoded categorical features**.  
+- Ensured dataset consistency for analysis.
 
 #### Sinpets of code:
 
@@ -47,7 +50,11 @@ Enhanced customer experience and satisfaction by aligning product recommendation
 #### Below Link is for Dataset Cleaning code 
 https://colab.research.google.com/drive/180K2tqA4n89lcheQxxBH6LUYgSceOFlr?usp=sharing
 
-### EDA Analysis 
+### EDA Analysis
+- **Histograms & Box Plots** to analyze `actual_price` & `discounted_price`.  
+- **Scatter Plots** to study relationships between `discount_percentage`, `actual_price`, and `discounted_price`.  
+- **Bar Charts & Pie Charts** to explore product categories and most purchased items.  
+- **Heatmaps** to visualize correlations between price, rating, and category. 
 
 #### Sinpets of Analysis:
 ![Screenshot 2025-03-06 133333](https://github.com/user-attachments/assets/2a3e08fa-c89b-4eda-a23f-a47974920883)
@@ -64,6 +71,15 @@ https://colab.research.google.com/drive/180K2tqA4n89lcheQxxBH6LUYgSceOFlr?usp=sh
 #### Below Link is for EDA Analysis:
 https://colab.research.google.com/drive/1GavFYexHwA1Qr0s45uag18rmPcqB8L6G?usp=sharing
 
+
+###  Customer Segmentation 
+- Applied **K-Means Clustering** to group customers based on:  
+  - **Discounted Price**  
+  - **Actual Price**  
+  - **Product Category**  
+  - **Ratings & Review Counts**  
+- Used **Elbow Method** to determine the best number of clusters.  
+
 #### Sinpets of Customer segregation and K-Means Clustering:
 ![Screenshot 2025-03-06 155041](https://github.com/user-attachments/assets/257d3c8b-180c-4282-a27e-f5e8ee2c25f5)
 ![Screenshot 2025-03-06 155101](https://github.com/user-attachments/assets/ca9a5a35-8a6f-450a-b3ae-e953f92279e1)
@@ -74,6 +90,14 @@ https://colab.research.google.com/drive/1GavFYexHwA1Qr0s45uag18rmPcqB8L6G?usp=sh
 https://colab.research.google.com/drive/1VfJKvocDUFxEaskvHPCfcr-Q8e5eRW_7?usp=sharing
 
 
+### Association Mining Rules
+
+- Applied **Apriori Algorithm** to discover product relationships using:  
+  - `product_id`, `product_name`, `category`, `discounted_price`, `actual_price`  
+- Identified **frequently purchased itemsets** using `support`, `confidence`, and `lift`.  
+- Recommended **cross-selling & product bundling** strategies based on insights.
+- As such there was no data for apriori algorithm so its file is mostly empty
+  
 #### Sinpets of Association Mining Rules:
 ![Screenshot 2025-03-06 172131](https://github.com/user-attachments/assets/389752ce-8a83-4e8b-914c-4ef7bb1c844b)
 ![Screenshot 2025-03-06 172147](https://github.com/user-attachments/assets/b895375d-e981-4338-a52c-1241aa7bd0bd)
@@ -81,6 +105,15 @@ https://colab.research.google.com/drive/1VfJKvocDUFxEaskvHPCfcr-Q8e5eRW_7?usp=sh
 
 #### Below Link is for Association Mining Rules:
 https://colab.research.google.com/drive/1O0cRgQuvV-6cIptwZP3OqUVNVqZw_WuT?usp=sharing
+
+
+### User Behavior Analysis**
+
+- **Performed Sentiment Analysis** on customer reviews (`review_content`).  
+- **Created Word Clouds** to visualize commonly used review words.  
+- **Analyzed Rating Distribution** to see customer satisfaction trends.  
+- **Identified Top Reviewers & Most Reviewed Products**. 
+
 
 #### Sinpets of User Behavior Analysis:
 ![Screenshot 2025-03-06 203940](https://github.com/user-attachments/assets/ab45730e-6942-480c-b2aa-b7eeb637347e)
@@ -95,14 +128,13 @@ https://colab.research.google.com/drive/1O0cRgQuvV-6cIptwZP3OqUVNVqZw_WuT?usp=sh
 https://colab.research.google.com/drive/1VEuzVrz0lLz8UGJoDUngWMGEttymnowK?usp=sharing
 
 
+## Streamlit Deployment
 
+- **Developed an interactive Streamlit Dashboard** with:  
+   Customer Segmentation Analysis  
+   Association Rule Mining Insights  
+   User Behavior Trends & Sentiment Analysis  
+- **Deployed on Streamlit Cloud** for easy access.
 
-
-
-
-
-
-
-
-
-
+#### Link for Streamlit Dashboard:
+https://data-mining-sa-code-gwxceeyaunjwkcwsi7nvrx.streamlit.app/

@@ -15,7 +15,7 @@ def load_data():
 df, clustered_df, rules_df = load_data()
 
 # Sidebar Navigation
-st.sidebar.title("📊 Amazon E-Commerce Insights")
+st.sidebar.title(" Amazon E-Commerce Insights")
 page = st.sidebar.radio("Choose Analysis", ["Customer Segments", "Frequent Itemsets", "User Behavior"])
 
 # ---------------------------

@@ -2,14 +2,14 @@
 
 # Data Mining: Market Basket Analysis of Amazon by Customer Segmentation and Shopping Patterns
 
-### The goal of this project is to analyze Amazon's e-commerce data to:
-Uncover customer shopping behaviors by examining purchasing patterns, product preferences, and spending habits.
-Segment customers into distinct groups based on their buying patterns, enabling Amazon to create personalized marketing strategies.
-Identify relationships between products using association rule mining to determine frequently purchased item combinations.
-Enhance marketing strategies by providing insights into customer preferences and shopping trends.
-Optimize product recommendations by understanding which products are often bought together.
-Improve customer satisfaction by aligning business strategies with customer needs and preferences.
+### Project Objectives:
 
+The objective of this project is to analyze Amazon's e-commerce data to:
+ Understand customer shopping behaviors through data analysis.
+ Segment customers based on their purchasing patterns using clustering techniques.
+ Identify relationships between products using Association Rule Mining.
+ Analyze customer reviews to gain insights into sentiment and satisfaction levels.
+ Develop an interactive dashboard using Streamlit for data-driven marketing strategies.
 
 ### Expected Outcomes
 
@@ -35,6 +35,14 @@ Visualizations such as histograms, scatter plots, bar charts, and heatmaps to he
 Improved customer targeting and segmentation for enhanced marketing efficiency.
 Data-driven decisions for inventory management and sales optimization.
 Enhanced customer experience and satisfaction by aligning product recommendations with shopping behaviors.
+
+#### Interactive Streamlit Dashboard
+
+Develop a user-friendly web app to visualize:
+ Customer Segments
+ Frequent Itemsets & Association Rules
+ Customer Review Analysis & Sentiments
+Enable Amazon’s business teams to explore real-time insights interactively.
 
 ###	Data Cleaning and Preprocessing
 - **Removed missing values** from key columns like `product_id`, `actual_price`, `discounted_price`, `rating`, etc.  

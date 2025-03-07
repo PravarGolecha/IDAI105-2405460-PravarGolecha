@@ -1,6 +1,6 @@
 ### IDAI105-2405460-PravarGolecha
 
-# Data Mining: Market Basket Analysis of Amazon by Customer Segmentation and Shopping Patterns
+# Data Mining SA: Market Basket Analysis of Amazon by Customer Segmentation and Shopping Patterns
 
 ### Project Objectives:
 

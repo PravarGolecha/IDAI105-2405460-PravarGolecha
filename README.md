@@ -145,5 +145,5 @@ https://colab.research.google.com/drive/1VEuzVrz0lLz8UGJoDUngWMGEttymnowK?usp=sh
 - **Deployed on Streamlit Cloud** for easy access.
 
 #### Link for Streamlit Dashboard:
-https://data-mining-sa-code-gwxceeyaunjwkcwsi7nvrx.streamlit.app/
+https://hx6ntuj7vzuhbucmdwbfw7.streamlit.app/
 
